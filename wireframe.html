@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site wireframe – Sunshine Farm Park</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, sans-serif; font-size: 14px; color: #333; }
+    .block { border: 2px dashed #999; padding: 1rem 1.5rem; margin: 0 0 0.5rem; background: #fafafa; }
+    .block-label { font-weight: 700; color: #666; margin-bottom: 0.5rem; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .main-inner { max-width: 960px; margin: 0 auto; }
+    .hero-box { min-height: 180px; display: flex; align-items: center; justify-content: center; color: #666; }
+    .nav-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0 1rem; }
+    .main-content h1 { margin-top: 0; font-size: 1.25rem; }
+    .main-content h2 { font-size: 1rem; margin: 1rem 0 0.5rem; }
+  </style>
+</head>
+<body>
+  <header class="block">
+    <div class="block-label">Header</div>
+    <strong>Sunshine Farm Park</strong> (logo link)
+  </header>
+
+  <div class="block hero-box">
+    <div class="block-label">Hero</div>
+    [ Hero image ]<br>
+    <small>[ Photo credit ]</small>
+  </div>
+
+  <nav class="block">
+    <div class="block-label">Main nav</div>
+    <ul class="nav-list">
+      <li>Home</li>
+      <li>Visit</li>
+      <li>Shop</li>
+      <li>Animals</li>
+      <li>Cafe</li>
+      <li>Play Park</li>
+      <li>Walks</li>
+    </ul>
+    <small>(&lt; 768px: Menu toggle)</small>
+  </nav>
+
+  <main class="block">
+    <div class="block-label">Main (max-width 960px, centred)</div>
+    <div class="main-content">
+      <h1>Page title (e.g. Welcome to Sunshine Farm Park)</h1>
+      <p>Body paragraphs…</p>
+      <h2>Section (e.g. Opening times, Location)</h2>
+      <p>Section content…</p>
+    </div>
+  </main>
+
+  <footer class="block">
+    <div class="block-label">Footer</div>
+    Address · Opening times · Contact · © Sunshine Farm Park
+  </footer>
+</body>
+</html>

@@ -1,0 +1,246 @@
+/* Sunshine Farm Park – base and layout */
+
+:root {
+  --color-bg: #f8f6f2;
+  --color-text: #2c2c2c;
+  --color-heading: #1a4d1a;
+  --color-accent: #c17f3a;
+  --color-header-bg: #2d5a2d;
+  --color-header-text: #fff;
+  --color-footer-bg: #2d5a2d;
+  --color-footer-text: #eee;
+  --color-hero-bg: #e0dcc8;
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Segoe UI', system-ui, sans-serif;
+  --max-width: 960px;
+  --spacing: 1rem;
+  --radius: 8px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Header */
+header {
+  background: var(--color-header-bg);
+  color: var(--color-header-text);
+  padding: var(--spacing) 1.5rem;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: inherit;
+}
+
+.logo:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+/* Hero */
+.hero {
+  background: var(--color-hero-bg);
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-placeholder {
+  color: var(--color-text);
+  font-size: 1.125rem;
+  opacity: 0.8;
+}
+
+.hero figure {
+  margin: 0;
+  width: 100%;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-credit {
+  font-size: 0.75rem;
+  color: var(--color-text);
+  opacity: 0.85;
+  padding: 0.35rem 1rem;
+  margin: 0;
+  background: var(--color-hero-bg);
+}
+
+.hero-credit a {
+  color: inherit;
+}
+
+/* Nav */
+.main-nav {
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0 1.5rem;
+}
+
+.nav-toggle {
+    display: none;
+    height: 2.5rem;
+    margin: 0.5rem 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: var(--radius);
+    background: #fff;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.nav-toggle:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+}
+
+.nav-list a {
+  display: block;
+  padding: 0.75rem 0;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.nav-list a:hover,
+.nav-list a:focus-visible {
+  color: var(--color-accent);
+}
+
+.nav-list li {
+  color: var(--color-text);
+}
+
+.nav-list .current {
+  padding: 0.75rem 0;
+  font-weight: 600;
+  color: var(--color-heading);
+}
+
+/* Main */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+main h1 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  color: var(--color-heading);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+main h2 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-heading);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--color-footer-bg);
+  color: var(--color-footer-text);
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-inner p {
+  margin: 0.25rem 0;
+}
+
+.footer-inner a {
+  color: #c9e0c9;
+}
+
+.built-by {
+  align-self: flex-end;
+}
+
+/* Responsive: show toggle and collapse nav on small screens */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-list.is-open {
+    display: flex;
+  }
+
+  .main-nav .nav-list {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    padding-bottom: 0.5rem;
+  }
+
+  .nav-list a,
+  .nav-list .current {
+    padding: 0.5rem 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .main-nav .nav-list {
+    display: flex;
+  }
+}
