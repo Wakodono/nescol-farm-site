@@ -20,11 +20,11 @@ https://wakodono.github.io/nescol-farm-site/
 
 ### Test checklist
 
-- **Browsers:** Open the site in Chrome, Firefox, Safari, and Edge. Check layout, navigation, and that every page loads.
-- **Devices:** Resize to mobile (e.g. < 768px), tablet, and desktop. Confirm the menu button toggles the nav on small screens, text is readable, and there is no horizontal scroll.
-- **Content:** Click every nav link; confirm each page loads and the footer is the same on all pages.
-- **Links:** “Find us on Google Maps” on the Visit page opens correctly; internal links stay within the site.
-- **Accessibility:** Tab through the page with the keyboard; check that focus is visible on links and the menu button. Optionally run Lighthouse or axe DevTools for a quick check.
+- ✅ **Browsers:** Open the site in Chrome, Firefox, Safari, and Edge. Check layout, navigation, and that every page loads. 
+- ✅ **Devices:** Resize to mobile (e.g. < 768px), tablet, and desktop. Confirm the menu button toggles the nav on small screens, text is readable, and there is no horizontal scroll.
+- ✅ **Content:** Click every nav link; confirm each page loads and the footer is the same on all pages.
+- ✅ **Links:** “Find us on Google Maps” on the Visit page opens correctly; internal links stay within the site.
+- ❌ **Accessibility:** Tab through the page with the keyboard; check that focus is visible on links and the menu button. Optionally run Lighthouse or axe DevTools for a quick check.
 
 ## Licence
 
