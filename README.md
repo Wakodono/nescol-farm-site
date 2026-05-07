@@ -13,14 +13,10 @@ A static, multi-page website for a farm visitor attraction (college project, SCQ
 1. Open the project folder in your editor or file manager.
 2. Open `index.html` in a browser (double-click or File → Open), or serve the folder with a local server (e.g. `npx serve .` or your editor’s “Live Server”) so links work correctly.
 
-## Upload and test
+## Live site
 
-### Upload (deploy)
+https://wakodono.github.io/nescol-farm-site/
 
-- **GitHub Pages:** Create a new repo, push this folder (or its contents as the repo root). In the repo go to Settings → Pages → Source: deploy from branch `main`, folder `/ (root)` (or `/docs` if you put the site in a `docs` folder). Use relative paths (e.g. `href="visit.html"`, `href="css/style.css"`) so the site works at the Pages URL.
-- **Netlify:** Drag and drop this folder into [Netlify Drop](https://app.netlify.com/drop), or connect the repo and deploy. No build step needed.
-
-Use **relative paths** for all links and assets so the site works at any base URL.
 
 ### Test checklist
 
